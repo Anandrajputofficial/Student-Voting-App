@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Voting App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Voting App</h2>
+        <form id="votingForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+            <label for="monitorName">Monitor Name:</label>
+            <select id="monitorName" required>
+                <option value="">Select Monitor</option>
+                <option value="Anand-Rajput">Anand Rajput</option>
+                <option value="Suresh-sah">Suresh sah</option>
+                <option value="Mithilesh-Singh">Mithilesh Singh</option>
+                <!-- Options will be populated dynamically using JavaScript -->
+            </select>
+            <button type="submit">Submit Vote</button>
+        </form>
+        <div id="voteCount"></div>
+        <ul id="votesList"></ul> <!-- List to display voted entries -->
+    </div>
+
+    <script src="counter.js"></script>
+</body>
+</html>
